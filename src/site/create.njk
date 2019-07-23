@@ -1,0 +1,29 @@
+---
+title: Get Yours
+layout: layouts/base.njk
+subtitle: Give someone some sugar
+---
+
+<h2> Make a new lolly</h2>
+
+<form name="new-lolly" action="/lolly/new" method="get">
+
+  <label for="recipient-name">To</label>
+  <input type="text" id="recipient-name" name="recipient-name" placeholder="A lolly for..." />
+
+  <select name="lolly-type" id="lolly-type">
+    <option value="lemon-pop">Lemon pop</option>
+    <option value="ice-cream-cone">Ice cream cone</option>
+    <option value="zoom">Zoom</option>
+  </select>
+
+  <label for="message">A lovely message</label>
+  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+  <label for="senders-name">From</label>
+  <input type="text" id="recisenderspient-name" name="senders-name" placeholder="from your friend..." />
+
+  <input type="submit" value="Make a lolly">
+
+</form>
+

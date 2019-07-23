@@ -1,6 +1,4 @@
 
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-
 
 module.exports = function(config) {
 
@@ -15,8 +13,6 @@ module.exports = function(config) {
   config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
 
 
-  // add support for syntax highlighting
-  config.addPlugin(syntaxHighlight);
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
