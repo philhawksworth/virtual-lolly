@@ -1,7 +1,7 @@
 {
-  "name": "EleventyOne",
+  "name": "vlolly",
   "version": "3.0.0",
-  "description": "A project bootstrap for Eleventy sites. With pipelines for PostCSS, JavaScript, and serverless functions",
+  "description": "Send someone some sugar. And also demo ptr-rendered site backed with a serverless API",
   "author": "Phil Hawksworth",
   "license": "MIT",
   "scripts": {
@@ -20,8 +20,10 @@
     "axios": "^0.19.0",
     "cssnano": "^4.1.10",
     "dotenv": "^8.0.0",
+    "faunadb": "^2.7.0",
     "html-minifier": "^4.0.0",
     "luxon": "^1.16.0",
+    "node-fetch": "^2.3.0",
     "postcss": "^7.0.17",
     "postcss-color-mix": "^1.1.0",
     "postcss-comment": "^2.0.0",
@@ -29,10 +31,11 @@
     "postcss-mixins": "^6.2.1",
     "postcss-simple-vars": "^5.0.2",
     "precss": "^4.0.0",
-    "uglify-js": "^3.6.0",
-    "node-fetch": "^2.3.0"
+    "shortid": "^2.2.14",
+    "uglify-js": "^3.6.0"
   },
   "devDependencies": {
-    "cross-env": "5.2.0"
+    "cross-env": "5.2.0",
+    "netlify-lambda": "^1.5.1"
   }
 }
