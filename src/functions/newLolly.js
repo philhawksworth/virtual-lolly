@@ -13,38 +13,27 @@ const client = new faunadb.Client({
 /* export our lambda function as named "handler" export */
 exports.handler = (event, context, callback) => {
 
-
-  const uniquePath = shortid.generate();
+  // get the form data
   const data = querystring.parse(event.body);
+
+  // add a unique path id
+  const uniquePath = shortid.generate();
   data.lollyPath = uniquePath;
-  // console.log('data :', event.body);
-
-
-  // const data = {
-  //   "lollyPath": uniquePath,
-  //   "recipientName": "Flip",
-  //   "from": "A friend",
-  //   "lollyType": "fab",
-  //   "message": "Sending you some more sugar"
-  // };
   const lolly = {
     data: data
   };
 
-  console.log('lolly :', lolly);
-
-
-  /* construct the fauna query */
+  // construct the fauna query
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {
       console.log('success', response);
-      /* Success! return the response with statusCode 200 */
 
+      // Success! Go to a paghe to view trhe result
       return callback(null, {
         body: JSON.stringify(response),
         statusCode: 301,
         headers: {
-          Location: `https://vlolly.netlify.com/lolly/fetch?id=${uniquePath}`,
+          Location: `https://vlolly.netlify.com/lolly/fetch?id=${uniquePath}&new=true`,
         }
       });
     }).catch((error) => {

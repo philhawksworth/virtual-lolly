@@ -17,9 +17,9 @@
 
 
 #truley infound lollies need a real 404
-[[redirects]]
-  from = "/lolly/*"
-  to = "/lolly/fetch?id=:splat"
+# [[redirects]]
+#   from = "/lolly/*"
+#   to = "/lolly/fetch?id=:splat"
 
 # # unfound lollies should look to the API directly
 # [[redirects]]

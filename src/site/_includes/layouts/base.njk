@@ -15,6 +15,7 @@
     </div>
 
     {% set js %}
+      {% include "js/core.js" %}
       {% include "js/getLollyData.js" %}
     {% endset %}
     <script>{{ js | jsmin | safe }}</script>
