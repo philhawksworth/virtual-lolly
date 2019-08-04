@@ -1,17 +1,13 @@
----
-layout: layouts/base.njk
-pageClass: lolly
-templateEngineOverride: njk, md
----
+{% extends 'layouts/base.njk' %}
 
-<h2 id="status">For you!</h2>
-
-<div class="lolly">
-  <h3 id="recipient">{{ item.data.recipientName }}</h3>
-  <div id="message">{{ item.data.message }}</div>
-  <div id="lollyimage">{{ item.data.lollyType }}</div>
-  <img src="/images/lolly.svg" alt="It's a lolly!">
-  <div id="from">{{ item.data.sendersName }}</div>
-</div>
-
+{% block main %}
+  <h2 id="status">For you!</h2>
+  <div class="lolly">
+    <h3 id="recipient">{{ item.data.recipientName }}</h3>
+    <div id="message">{{ item.data.message }}</div>
+    <div id="lollyimage">{{ item.data.lollyType }}</div>
+    <img src="/images/lolly.svg" alt="It's a lolly!">
+    <div id="from">{{ item.data.sendersName }}</div>
+  </div>
+{% endblock %}
 

@@ -1,0 +1,21 @@
+{% extends 'layouts/base.njk' %}
+
+{% block main %}
+  <h2 id="status">Checking the freezer...</h2>
+  <div class="lolly">
+    <h3 id="recipient"></h3>
+    <div id="message"></div>
+    <div id="lollyimage"></div>
+    <img src="/images/lolly.svg" alt="It's a lolly!">
+    <div id="from"></div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {% set js %}
+    {% include "js/core.js" %}
+    {% include "js/getLollyData.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+{% endblock %}
+
