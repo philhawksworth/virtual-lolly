@@ -16,7 +16,7 @@
 
 
 # unfound lollies should look to the API directly
-# [[redirects]]
-#   from = "/lolly/*"
-#   to = "/lolly/fetch?id=:splat"
+[[redirects]]
+  from = "/lolly/*"
+  to = "/lolly/fetch?id=:splat"
 
