@@ -1,6 +1,7 @@
 const faunadb = require('faunadb');
 const shortid = require('shortid');
 const querystring = require('querystring');
+const axios = require('axios');
 
 require('dotenv').config();
 
@@ -27,6 +28,17 @@ exports.handler = (event, context, callback) => {
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {
       console.log('success', response);
+
+
+      // Trigger a nee build to freeze this lolly forever
+      axios.post('https://api.netlify.com/build_hooks/5d46fa20da4a1b70047f2f04')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
 
       // Success! Go to a paghe to view trhe result
       return callback(null, {
