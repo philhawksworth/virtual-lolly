@@ -10,7 +10,7 @@ const client = new faunadb.Client({
 
 exports.handler = (event, context, callback) => {
 
-  const path = event.queryStringParameters.id;
+  const path = event.queryStringParameters.id.replace("/", "");
 
   client.query(
     q.Get(q.Match(q.Index("lolly_by_path"), path))
