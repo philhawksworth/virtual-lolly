@@ -20,3 +20,10 @@
   from = "/lolly/*"
   to = "/lolly/fetch?id=:splat"
 
+
+# Not even available via the API? THis really id a 404
+[[redirects]]
+  from = "/lolly/*"
+  to = "/melted/index.html"
+  status = 404
+
