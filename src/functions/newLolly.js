@@ -25,6 +25,10 @@ exports.handler = (event, context, callback) => {
   const lolly = {
     data: data
   };
+
+  console.log('lolly :', lolly);
+
+
   /* construct the fauna query */
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {

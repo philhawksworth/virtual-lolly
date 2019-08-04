@@ -5,8 +5,6 @@ const seed   = require('../../../utils/save-seed.js');
 
 require('dotenv').config();
 
-// var url = `https://www.hawksworx.com/feed.json`;
-
 const q = faunadb.query;
 const client = new faunadb.Client({
   secret: process.env.FAUNADB_SERVER_SECRET
