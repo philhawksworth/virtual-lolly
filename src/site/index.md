@@ -10,6 +10,13 @@ layout: layouts/base.njk
 About vlolly site
 
 - [make a new lolly](/create)
-- [look up a lolly](/lolly/1234)
 - [look up a lolly which is being frozen](/lolly/almost-ready)
 - [not a lolly](/lolly/nope)
+
+<hr />
+
+<ul>
+{% for lolly in lollies %}
+<li><a href="/lolly/{{ lolly.data.lollyPath }}">{{ lolly.data.lollyPath }}</a></li>
+{% endfor %}
+</ul>
