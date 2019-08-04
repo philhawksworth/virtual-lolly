@@ -1,13 +1,17 @@
 {% extends 'layouts/base.njk' %}
 
 {% block main %}
-  <h2 id="status">For you!</h2>
   <div class="lolly">
-    <h3 id="recipient">{{ item.data.recipientName }}</h3>
-    <div id="message">{{ item.data.message }}</div>
-    <div id="lollyimage">{{ item.data.lollyType }}</div>
-    <img src="/images/lolly.svg" alt="It's a lolly!">
-    <div id="from">{{ item.data.sendersName }}</div>
+    <img class="lollypic" src="/images/lolly.svg" alt="It's a lolly!">
+    <div class="info">
+      <div class="details">
+        {# <p class="explainer">Ooh look! You've been sent a virtual lolly to enjoy.</p> #}
+        <p id="recipient" class="recipient">{{ item.data.recipientName }}</p>
+        <div id="message" class="message"> {{ item.data.message }}</div>
+        <p id="from" class="from"> — {{ item.data.sendersName }}</p>
+      </div>
+      <p class="bytheway">{{ item.data.sendersName }} made this virtual lollipop for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat tha won't rot their teeth</p>
+    </div>
   </div>
 {% endblock %}
 
