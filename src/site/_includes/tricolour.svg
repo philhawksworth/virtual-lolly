@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mylolly" width="163px" height="431px" viewBox="0 0 163 431" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M50.5845697,1.80919445e-14 L112.757384,2.48689958e-14 C129.058949,2.18744467e-14 142.575449,12.6254516 143.685437,28.8891833 L162.453983,303.889183 C163.619754,320.970275 150.717838,335.762281 133.636746,336.928053 C132.934162,336.976004 132.230148,337 131.52593,337 L31,337 C13.8791728,337 2.09669663e-15,323.120827 0,306 C-8.99799523e-17,305.265258 0.0261215736,304.530748 0.0783152276,303.797862 L19.662885,28.7978622 C20.8183904,12.5726406 34.3182545,-1.12227811e-14 50.5845697,-1.42108547e-14 Z" id="path-1"></path>
+        <path d="M99,2.88483832e-14 L113,3.19744231e-14 C129.301566,2.89798741e-14 142.818065,12.6254516 143.928053,28.8891833 L162.696599,303.889183 C163.862371,320.970275 150.960455,335.762281 133.879363,336.928053 C133.176779,336.976004 132.472765,337 131.768546,337 L117.768546,337 C118.472765,337 119.176779,336.976004 119.879363,336.928053 C136.960455,335.762281 149.862371,320.970275 148.696599,303.889183 L129.928053,28.8891833 C128.818065,12.6254516 115.301566,2.89798741e-14 99,3.19744231e-14 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="handle" transform="translate(65.000000, 137.000000)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="#C06C50" x="0" y="2" width="32" height="292" rx="16"></rect>
+                <rect id="Rectangle" fill="#E3A28D" x="0" y="0" width="32" height="292" rx="16"></rect>
+                <polygon id="Rectangle-Copy-3" fill-opacity="0.181584013" fill="#8C0040" points="0 200 32 200 32 218 0 223.801515"></polygon>
+            </g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="lolly-bottom" fill="#E8528A" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <rect id="lolly-top" fill="#96BF83" fill-rule="nonzero" mask="url(#mask-2)" x="-25" y="-9" width="224" height="134"></rect>
+            <rect id="lolly-middle" fill="#E9BC66" fill-rule="nonzero" mask="url(#mask-2)" x="-29" y="113" width="224" height="111"></rect>
+            <path d="M79.7697726,3.19744231e-14 C63.468207,2.89798741e-14 49.9517074,12.6254516 48.8417198,28.8891833 L30.0731738,303.889183 C28.9074019,320.970275 41.8093181,335.762281 58.89041,336.928053 C59.5929941,336.976004 60.2970081,337 61.0012266,337 L17,337 C-0.120827245,337 -14,323.120827 -14,306 C-14,305.265258 -13.9738784,304.530748 -13.9216848,303.797862 L5.66288496,28.7978622 C6.81839036,12.5726406 20.3182545,1.0093501e-14 36.5845697,7.10542736e-15 L79.7697726,2.77347066e-14 Z" id="shade" fill="#67000D" fill-rule="nonzero" opacity="0.0961449033" mask="url(#mask-2)"></path>
+            <mask id="mask-4" fill="white">
+                <use xlink:href="#path-3"></use>
+            </mask>
+            <use id="shine" fill="#FFFFFF" fill-rule="nonzero" opacity="0.113420759" xlink:href="#path-3"></use>
+            <g id="glint" transform="translate(38.000000, 16.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <rect id="Rectangle" x="27" y="0" width="14" height="7" rx="3.5"></rect>
+                <rect id="Rectangle-Copy" x="0" y="0" width="23" height="7" rx="3.5"></rect>
+            </g>
+            <path d="M97,337 L65,337 L65,155 L65,153 C65,144.163444 72.163444,137 81,137 C89.836556,137 97,144.163444 97,153 L97,155 L97,337 Z" id="Combined-Shape" fill="#A7563C" fill-rule="nonzero" opacity="0.0991908482"></path>
+        </g>
+    </g>
+</svg>

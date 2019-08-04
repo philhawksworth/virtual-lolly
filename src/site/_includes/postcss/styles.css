@@ -161,12 +161,26 @@ footer {
 
 }
 
+#mylolly {
+  width: 300px;
+}
+
+#lolly-top {
+  fill:#d55555;
+}
+#lolly-middle {
+  fill:#e9a55b;
+}
+#lolly-bottom {
+  fill:#acde67;
+}
 .info {
   margin: 2em 4em;
 }
 
 .details {
   padding: 1em 2em;
+  margin-bottom: 1.5em;
   background-color: rgba(0,0,0,0.2);
   box-shadow: rgba(0,0,0,0.6) 0 0 10px;
   text-align: left;
@@ -182,6 +196,9 @@ footer {
 }
 
 .bytheway {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: rgba(255,255,255,0.6);
+  @media (min-width: $mid) {
+    font-size: 0.8em;
+  };
 }
