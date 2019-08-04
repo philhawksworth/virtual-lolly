@@ -20,7 +20,7 @@
 [[redirects]]
   from = "/lolly/*"
   to = "/fetch/lolly/?id=:splat"
-
+  status = 200
 
 # # unfound lollies should look to the API directly
 # [[redirects]]
