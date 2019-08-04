@@ -18,9 +18,8 @@
 # unfound lollies should look to the API directly
 [[redirects]]
   from = "/lolly/*"
-  to = "/melted/index.html"
-  status = 404
-  # to = "/.netlify/functions/getLolly?id=:splat"
+  to = "/.netlify/functions/getLolly?id=:splat"
+  status = 200
 
 #truley infound lollies need a real 404
 [[redirects]]

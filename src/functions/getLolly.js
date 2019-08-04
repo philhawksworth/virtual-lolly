@@ -10,8 +10,11 @@ const client = new faunadb.Client({
 
 exports.handler = (event, context, callback) => {
 
+  const id = event.queryStringParameters.id;
+
+
   client.query(
-    q.Get(q.Ref(q.Collection("lollies"), "239671553286996488"))
+    q.Get(q.Ref(q.Collection("lollies"), id))
   ).then((response) => {
     return callback(null, {
       statusCode: 200,

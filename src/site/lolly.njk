@@ -4,7 +4,7 @@ pagination:
   data: lollies
   size: 1
   alias: item
-permalink: lolly/{{ item.data.lollyPath }}/index.html
+permalink: lolly/{{ item.ref.@ref.id }}/index.html
 ---
 
 <h2>To {{ item.data.recipientName }}</h2>

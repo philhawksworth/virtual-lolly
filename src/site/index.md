@@ -17,6 +17,6 @@ About vlolly site
 
 <ul>
 {% for lolly in lollies %}
-<li><a href="/lolly/{{ lolly.data.lollyPath }}">{{ lolly.data.lollyPath }}</a></li>
+<li><a href="/lolly/{{ lolly.ref.@ref.id }}">{{ lolly.ref.@ref.id }}</a></li>
 {% endfor %}
 </ul>

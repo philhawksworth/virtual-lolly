@@ -8,21 +8,20 @@ const client = new faunadb.Client({
   secret: process.env.FAUNADB_SERVER_SECRET
 })
 
-// shortid.characters('23456789abcdefghijkmnpqrstuvwxyz');
-
 
 /* export our lambda function as named "handler" export */
 exports.handler = (event, context, callback) => {
 
 
-  // const data = JSON.parse(event.body);
-  const data = {
-    "lollyPath": shortid.generate(),
-    "recipientName": "Flip",
-    "from": "A friend",
-    "lollyType": "fab",
-    "message": "Sending you some more sugar"
-  };
+  const data = JSON.parse(event.body);
+  data.lollyPath = shortid.generate();
+  // const data = {
+  //   "lollyPath": shortid.generate(),
+  //   "recipientName": "Flip",
+  //   "from": "A friend",
+  //   "lollyType": "fab",
+  //   "message": "Sending you some more sugar"
+  // };
   const lolly = {
     data: data
   };
