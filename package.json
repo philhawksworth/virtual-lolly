@@ -32,6 +32,7 @@
     "postcss-simple-vars": "^5.0.2",
     "precss": "^4.0.0",
     "shortid": "^2.2.14",
+    "uglify-es": "^3.3.9",
     "uglify-js": "^3.6.0"
   },
   "devDependencies": {

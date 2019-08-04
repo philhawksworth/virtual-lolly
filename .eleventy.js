@@ -19,7 +19,7 @@ module.exports = function(config) {
 
   // compress and combine js files
   config.addFilter("jsmin", function(code) {
-    const UglifyJS = require("uglify-js");
+    const UglifyJS = require("uglify-es");
     let minified = UglifyJS.minify(code);
       if( minified.error ) {
           console.log("UglifyJS error: ", minified.error);

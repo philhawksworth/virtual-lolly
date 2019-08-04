@@ -24,11 +24,8 @@ exports.handler = (event, context, callback) => {
 
   }).catch((error) => {
     return callback(null, {
-      statusCode: 301,
-      body: "Not found",
-      headers: {
-        Location: 'https://vlolly.netlify.com/melted',
-      }
+      statusCode: 404,
+      body: JSON.stringify(error)
     });
   });
 

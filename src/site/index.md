@@ -10,8 +10,6 @@ layout: layouts/base.njk
 About vlolly site
 
 - [make a new lolly](/create)
-- [look up a lolly which is being frozen](/lolly/almost-ready)
-- [not a lolly](/lolly/nope)
 
 <hr />
 
