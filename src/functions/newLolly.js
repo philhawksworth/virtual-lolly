@@ -1,5 +1,6 @@
 const faunadb = require('faunadb');
 const shortid = require('shortid');
+const querystring = require('querystring');
 
 require('dotenv').config();
 
@@ -13,10 +14,14 @@ const client = new faunadb.Client({
 exports.handler = (event, context, callback) => {
 
 
-  const data = JSON.parse(event.body);
-  data.lollyPath = shortid.generate();
+  const uniquePath = shortid.generate();
+  const data = querystring.parse(event.body);
+  data.lollyPath = uniquePath;
+  // console.log('data :', event.body);
+
+
   // const data = {
-  //   "lollyPath": shortid.generate(),
+  //   "lollyPath": uniquePath,
   //   "recipientName": "Flip",
   //   "from": "A friend",
   //   "lollyType": "fab",
@@ -34,9 +39,13 @@ exports.handler = (event, context, callback) => {
     .then((response) => {
       console.log('success', response);
       /* Success! return the response with statusCode 200 */
+
       return callback(null, {
-        statusCode: 200,
-        body: JSON.stringify(response)
+        body: JSON.stringify(response),
+        statusCode: 301,
+        headers: {
+          Location: `https://vlolly.netlify.com/lolly/fetch?id=${uniquePath}`,
+        }
       });
     }).catch((error) => {
       console.log('error', error);
