@@ -18,15 +18,14 @@ function displayLolly(data) {
 
   var params = new URLSearchParams(location.search);
   if(params.has('new')){
-    $('#status').innerText = "Lolly is frozen and ready for you to share with your friend";
+    $('#status').innerText = `Lolly is frozen and ready for you to share with your friend: https://vlolly.netlify.com/${data.lollyPath}`;
   } else {
     $('#status').innerText = "A lolly for you. Aren't you lucky!";
   }
-
   $('#recipient').innerText = data.recipientName;
   $('#message').innerText = data.message;
   $('#lollyimage').innerText = data.lollyType;
-  $('#from').innerText = data.from;
+  $('#from').innerText = data.sendersName;
 }
 
 

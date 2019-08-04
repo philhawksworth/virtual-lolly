@@ -8,16 +8,15 @@
   command = "npm run start"
 
 
-
-# unfound lollies should look to the API directly
+# resolve the "new" URL to a function
 [[redirects]]
-  from = "/lolly/new"
+  from = "/new"
   to = "/.netlify/functions/newLolly"
   status = 200
 
 
-#truley infound lollies need a real 404
-[[redirects]]
-  from = "/lolly/*"
-  to = "/lolly/fetch?id=:splat"
+# unfound lollies should look to the API directly
+# [[redirects]]
+#   from = "/lolly/*"
+#   to = "/lolly/fetch?id=:splat"
 
