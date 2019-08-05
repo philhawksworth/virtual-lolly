@@ -1,1 +1,209 @@
-[{"ref":{"@ref":{"id":"239848429222625799","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1564996136795000,"data":{"flavourTop":"#d52358","flavourMiddle":"#e95946","flavourBottom":"#deaa43","recipientName":"Verity","message":"Let's win (or some in the top 3) the quiz tonight! I believe in Us.","sendersName":"Phil","lollyPath":"NfoiVUAlr"}},{"ref":{"@ref":{"id":"239849292430311937","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1564996960010000,"data":{"flavourTop":"#c6d5d2","flavourMiddle":"#c6d5d2","flavourBottom":"#c6d5d2","recipientName":"Phil","message":"A chilly lemonade treat","sendersName":"Phil","lollyPath":"0jAV03WLY"}},{"ref":{"@ref":{"id":"239849755727888897","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1564997401843000,"data":{"flavourTop":"#abd5ae","flavourMiddle":"#d5d0b1","flavourBottom":"#d5bdd2","recipientName":"Claire","message":"Subtle flavours. Not too much sugar.  I hope you like your lolly. You deserve it.","sendersName":"Phil","lollyPath":"mADOjwD4v"}},{"ref":{"@ref":{"id":"239850279974994436","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1564997901890000,"data":{"flavourTop":"#9ad52c","flavourMiddle":"#c3d531","flavourBottom":"#d5b500","recipientName":"Ingrid","message":"Here's a lolly for you. I hope you like it. Thanks for helping me look at the redirects!","sendersName":"Phil","lollyPath":"Fwh8bHWjY"}},{"ref":{"@ref":{"id":"239851552170312196","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1564999115060000,"data":{"flavourTop":"#d51163","flavourMiddle":"#d50031","flavourBottom":"#d55b2b","recipientName":"Pops","message":"Hmmmmm strong fruit","sendersName":"Phil","lollyPath":"3so6leJSU"}},{"ref":{"@ref":{"id":"239854319973696007","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1565001754650000,"data":{"flavourTop":"#d54077","flavourMiddle":"#d51d78","flavourBottom":"#d50058","recipientName":"Molly","message":"Because pink IS still cool, and you called it from the start!","sendersName":"Uncle Phil","lollyPath":"mbX8DoF22"}},{"ref":{"@ref":{"id":"239857149212099076","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1565004452820000,"data":{"flavourTop":"#e63b7a","flavourMiddle":"#ee719e","flavourBottom":"#ff8c82","recipientName":"Everyone","message":"Because it never hurts to spread a little sunshine. And this appears to work well on mobile devices. ","sendersName":"Phil ","lollyPath":"E8xNwZdNo"}},{"ref":{"@ref":{"id":"239861117126443527","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1565008236920000,"data":{"flavourTop":"#ff8648","flavourMiddle":"#feb43f","flavourBottom":"#fecb3e","recipientName":"Rafa","message":"I thought I’d send you a lolly with the right colours for a man in Amsterdam. I’m just testing this proof of concept out, but at least you’ll get a lolly (virtually) out of it. ","sendersName":"The Hawk","lollyPath":"hWMcKMvBF"}},{"ref":{"@ref":{"id":"239865627520532999","collection":{"@ref":{"id":"lollies","collection":{"@ref":{"id":"collections"}}}}}},"ts":1565012538370000,"data":{"flavourTop":"#885bd5","flavourMiddle":"#a679d5","flavourBottom":"#d500b5","recipientName":"Testing longer names","message":"I wonder if this will fit ok. I hope it does.","sendersName":"Phil","lollyPath":"ZgEqr76T7"}}]
+[
+  {
+    "ref": {
+      "@ref": {
+        "id": "239848429222625799",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1564996136795000,
+    "data": {
+      "flavourTop": "#d52358",
+      "flavourMiddle": "#e95946",
+      "flavourBottom": "#deaa43",
+      "recipientName": "Verity",
+      "message": "Let's win (or some in the top 3) the quiz tonight! I believe in Us.",
+      "sendersName": "Phil",
+      "lollyPath": "NfoiVUAlr"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239849292430311937",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1564996960010000,
+    "data": {
+      "flavourTop": "#c6d5d2",
+      "flavourMiddle": "#c6d5d2",
+      "flavourBottom": "#c6d5d2",
+      "recipientName": "Phil",
+      "message": "A chilly lemonade treat",
+      "sendersName": "Phil",
+      "lollyPath": "0jAV03WLY"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239849755727888897",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1564997401843000,
+    "data": {
+      "flavourTop": "#abd5ae",
+      "flavourMiddle": "#d5d0b1",
+      "flavourBottom": "#d5bdd2",
+      "recipientName": "Claire",
+      "message": "Subtle flavours. Not too much sugar.  I hope you like your lolly. You deserve it.",
+      "sendersName": "Phil",
+      "lollyPath": "mADOjwD4v"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239850279974994436",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1564997901890000,
+    "data": {
+      "flavourTop": "#9ad52c",
+      "flavourMiddle": "#c3d531",
+      "flavourBottom": "#d5b500",
+      "recipientName": "Ingrid",
+      "message": "Here's a lolly for you. I hope you like it. Thanks for helping me look at the redirects!",
+      "sendersName": "Phil",
+      "lollyPath": "Fwh8bHWjY"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239851552170312196",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1564999115060000,
+    "data": {
+      "flavourTop": "#d51163",
+      "flavourMiddle": "#d50031",
+      "flavourBottom": "#d55b2b",
+      "recipientName": "Pops",
+      "message": "Hmmmmm strong fruit",
+      "sendersName": "Phil",
+      "lollyPath": "3so6leJSU"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239854319973696007",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1565001754650000,
+    "data": {
+      "flavourTop": "#d54077",
+      "flavourMiddle": "#d51d78",
+      "flavourBottom": "#d50058",
+      "recipientName": "Molly",
+      "message": "Because pink IS still cool, and you called it from the start!",
+      "sendersName": "Uncle Phil",
+      "lollyPath": "mbX8DoF22"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239857149212099076",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1565004452820000,
+    "data": {
+      "flavourTop": "#e63b7a",
+      "flavourMiddle": "#ee719e",
+      "flavourBottom": "#ff8c82",
+      "recipientName": "Everyone",
+      "message": "Because it never hurts to spread a little sunshine. And this appears to work well on mobile devices. ",
+      "sendersName": "Phil ",
+      "lollyPath": "E8xNwZdNo"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239861117126443527",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1565008236920000,
+    "data": {
+      "flavourTop": "#ff8648",
+      "flavourMiddle": "#feb43f",
+      "flavourBottom": "#fecb3e",
+      "recipientName": "Rafa",
+      "message": "I thought I’d send you a lolly with the right colours for a man in Amsterdam. I’m just testing this proof of concept out, but at least you’ll get a lolly (virtually) out of it. ",
+      "sendersName": "The Hawk",
+      "lollyPath": "hWMcKMvBF"
+    }
+  },
+  {
+    "ref": {
+      "@ref": {
+        "id": "239865627520532999",
+        "collection": {
+          "@ref": {
+            "id": "lollies",
+            "collection": { "@ref": { "id": "collections" } }
+          }
+        }
+      }
+    },
+    "ts": 1565012538370000,
+    "data": {
+      "flavourTop": "#885bd5",
+      "flavourMiddle": "#a679d5",
+      "flavourBottom": "#d500b5",
+      "recipientName": "Testing longer names",
+      "message": "I wonder if this will fit ok. I hope it does.",
+      "sendersName": "Phil",
+      "lollyPath": "ZgEqr76T7"
+    }
+  }
+]
