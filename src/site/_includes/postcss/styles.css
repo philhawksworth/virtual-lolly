@@ -161,8 +161,8 @@ footer {
 
 }
 
-#mylolly {
-  width: 400px;
+.giftLolly .lollipop {
+
   margin-bottom: -4em;
   @media (min-width: $mid) {
     margin-bottom: 0em;
@@ -301,7 +301,7 @@ code {
   align-items: center;
   margin-bottom: 3em;
 
-  .exampleLolly {
+  .lollipop {
     height: 180px;
     @media (min-width: $mid) {
       height: 300px;
@@ -342,4 +342,9 @@ code {
   .lollyTop { fill: #ed265b; }
   .lollyMiddle { fill: #f77249; }
   .lollyBottom { fill: #f5c64d; }
+}
+
+.gone {
+  margin-top: 4em;
+  margin-bottom: 4em;
 }

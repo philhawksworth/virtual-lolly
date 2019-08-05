@@ -1,14 +1,16 @@
 {% extends 'layouts/base.njk' %}
 
 {% block extraStyle %}
-#lollyTop { fill: {{ item.data.flavourTop }}; }
-#lollyMiddle { fill: {{ item.data.flavourMiddle }}; }
-#lollyBottom { fill: {{ item.data.flavourBottom }}; }
+.lollyTop { fill: {{ item.data.flavourTop }}; }
+.lollyMiddle { fill: {{ item.data.flavourMiddle }}; }
+.lollyBottom { fill: {{ item.data.flavourBottom }}; }
 {% endblock %}
 
 {% block main %}
   <div class="lolly">
-    {%  include "tricolour.svg" %}
+    <div class="giftLolly">
+    {%  include "svg/lolly-image.svg" %}
+    </div>
     <div class="info">
       <div class="details">
         <p id="recipient" class="recipient">{{ item.data.recipientName }}</p>

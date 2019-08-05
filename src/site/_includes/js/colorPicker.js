@@ -9,6 +9,6 @@ function updateColour(selector, section) {
   }, false);
 }
 
-updateColour('#flavourTop', '#lollyTop');
-updateColour('#flavourMiddle', '#lollyMiddle');
-updateColour('#flavourBottom', '#lollyBottom');
+updateColour('#flavourTop', '.lollyTop');
+updateColour('#flavourMiddle', '.lollyMiddle');
+updateColour('#flavourBottom', '.lollyBottom');

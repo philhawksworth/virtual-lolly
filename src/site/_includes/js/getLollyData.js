@@ -5,20 +5,14 @@ function getLollyData(id) {
   var url = `/.netlify/functions/getLolly?id=${id}`;
   fetch(url)
   .then(function(response) {
-
-    console.log('response :', JSON.stringify(response));
-
     return response.json();
   })
   .then(function(json) {
-
-    console.log(JSON.stringify(json));
-
-    // if(json.requestResult.statusCode && json.requestResult.statusCode == 400) {
-    //   window.location.pathname = "/melted";
-    // }
-
-    displayLolly(json);
+    if(json.requestResult.statusCode && json.requestResult.statusCode == 404) {
+      window.location.pathname = "/melted";
+    } else {
+      displayLolly(json);
+    }
   });
 }
 
@@ -33,9 +27,9 @@ function displayLolly(data) {
   }
   $('#recipient').innerText = data.recipientName;
   $('#message').innerText = data.message;
-  $('#lollyTop').style.fill = data.flavourTop;
-  $('#lollyMiddle').style.fill = data.flavourMiddle;
-  $('#lollyBottom').style.fill = data.flavourBottom;
+  $('.lollyTop').style.fill = data.flavourTop;
+  $('.lollyMiddle').style.fill = data.flavourMiddle;
+  $('.lollyBottom').style.fill = data.flavourBottom;
   $('#from').innerText = data.sendersName;
 }
 
