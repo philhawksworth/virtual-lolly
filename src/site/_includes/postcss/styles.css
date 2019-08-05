@@ -74,11 +74,11 @@ h1.title a {
   font-weight: 300;
   color: #fff;
   border-bottom-style: none;
-  text-shadow: $accent-color 1px 1px 8px;
+  text-shadow: $accent-color 0 0 8px;
 
   &:hover,
   &:focus {
-    text-shadow: $accent-color 1px 1px 16px;
+    text-shadow: $accent-color 0 0 16px;
   }
 
 }
@@ -163,7 +163,7 @@ footer {
 
 #mylolly {
   width: 400px;
-  margin-bottom: -7em;
+  margin-bottom: -4em;
   @media (min-width: $mid) {
     margin-bottom: 0em;
   };
@@ -190,6 +190,8 @@ footer {
 .from {
   font-family: 'Yellowtail', cursive;
   font-size: 1.6em;
+  font-style:normal;
+  text-shadow: #000 0 0 10px;
 }
 .from {
   padding-left: 2em;

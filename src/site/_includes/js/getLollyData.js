@@ -5,6 +5,9 @@ function getLollyData(id) {
   var url = `/.netlify/functions/getLolly?id=${id}`;
   fetch(url)
   .then(function(response) {
+
+    console.log('response :', JSON.stringify(response));
+
     return response.json();
   })
   .then(function(json) {
