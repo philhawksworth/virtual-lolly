@@ -224,22 +224,49 @@ footer {
   overflow: hidden;
   margin: 30px;
   box-shadow: #000 0 0 14px;
+
 }
 .colourpicker {
   height: 60px;
   width: 60px;
   margin-top: -10px;
   margin-left: -10px;
+  cursor: pointer;
 }
 
 label {
   font-family: sans-serif;
   font-size: 18px;
   display: block;
+  color: #999;
 }
 
-input[type=text] {
+input[type=text],
+textarea {
+  font-size: 0.9em;
+  width: 100%;
+  padding: 0.4em 0.2em;
+  margin: 0 -0.2em;
+  border: solid 1px $accent-color;
+  color: #fff;
+  background-color: #222;
+  box-shadow: $accent-color 0 0 6px;
+}
 
-  font-size: 0.8em;
+input[type=submit] {
+  margin-top: 1em;
+  box-shadow: $accent-color 0 0 6px;
+  border: solid 2px $accent-color;
+  background-color: transparent;
+  font-size: 0.9em;
+  color: $accent-color;
+  padding: 1em 2em;
+  border-radius: 4em;
+  cursor: pointer;
+  transition: all .30s;
 
+  &:hover {
+    background-color: $accent-color;
+    color: #222;
+  }
 }
