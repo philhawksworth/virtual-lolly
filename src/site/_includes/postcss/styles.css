@@ -20,12 +20,13 @@ body {
   text-align: center;
   background-color: $page-color;
   color: mix($text-color, $page-color, 90%);
-  font-family: sans-serif;
+  font-family: "open-sans", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
   background:  $page-color;
+
 
   @media (min-width: $narrow) {
     font-size: 18px;
@@ -85,12 +86,11 @@ h1.title a {
 
 .subtitle {
   font-size: 1em;
-  font-family: "open-sans", Helvetica, sans-serif;
   font-style: italic;
   color: #ddd;
   text-shadow: $accent-color 1px 1px 4px;
-  margin-top: 2em;
-  margin-bottom: 5em;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
   line-height: 1.2;
 }
 
@@ -222,6 +222,10 @@ footer {
   };
 }
 
+form {
+  padding-bottom: 3em;
+}
+
 .pickerLabel {
   height: 40px;
   width: 40px;
@@ -296,14 +300,14 @@ code {
   margin-bottom: 3em;
 
   .exampleLolly {
-    height: 200px;
+    height: 180px;
     @media (min-width: $mid) {
       height: 300px;
     };
   }
 
   .example {
-    margin: 0 -38px;
+    margin: 0 -45px;
     @media (min-width: $mid) {
       margin: 0 -10px;
     };
