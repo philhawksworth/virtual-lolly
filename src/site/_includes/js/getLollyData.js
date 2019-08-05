@@ -11,9 +11,9 @@ function getLollyData(id) {
 
     console.log(JSON.stringify(json));
 
-    if(json.requestResult.statusCode && json.requestResult.statusCode == 400) {
-      window.location.pathname = "/melted";
-    }
+    // if(json.requestResult.statusCode && json.requestResult.statusCode == 400) {
+    //   window.location.pathname = "/melted";
+    // }
 
     displayLolly(json);
   });
@@ -24,7 +24,7 @@ function displayLolly(data) {
 
   var params = new URLSearchParams(location.search);
   if(params.has('new')){
-    $('#status').innerText = `Lolly is frozen and ready for you to share with your friend: https://vlolly.net/lolly/${data.lollyPath}`;
+    $('#status').innerHTML = `Lolly is frozen and ready for you to share with your friend: <code>https://vlolly.net/lolly/${data.lollyPath}</code>`;
   } else {
     $('#status').innerText = "A lolly for you. Aren't you lucky!";
   }
