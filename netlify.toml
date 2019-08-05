@@ -22,8 +22,8 @@
 
 
 # Not even available via the API? THis really id a 404
-# [[redirects]]
-#   from = "/lolly/*"
-#   to = "/melted/index.html"
-#   status = 404
+[[redirects]]
+  from = "*"
+  to = "/melted/index.html"
+  status = 404
 
