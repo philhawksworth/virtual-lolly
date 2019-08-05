@@ -24,9 +24,9 @@ function displayLolly(data) {
   }
   $('#recipient').innerText = data.recipientName;
   $('#message').innerText = data.message;
-  $('#flavourTop').style.fill = data.flavourTop;
-  $('#flavourMiddle').style.fill = data.flavourMiddle;
-  $('#flavourBottom').style.fill = data.flavourBottom;
+  $('#lollyTop').style.fill = data.flavourTop;
+  $('#lollyMiddle').style.fill = data.flavourMiddle;
+  $('#lollyBottom').style.fill = data.flavourBottom;
   $('#from').innerText = data.sendersName;
 }
 
