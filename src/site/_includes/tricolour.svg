@@ -14,9 +14,9 @@
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="lollyBottom" fill="#E8528A" fill-rule="nonzero" xlink:href="#path-1"></use>
-            <rect id="lollyTop" fill="#96BF83" fill-rule="nonzero" mask="url(#mask-2)" x="-25" y="-9" width="224" height="134"></rect>
-            <rect id="lollyMiddle" fill="#E9BC66" fill-rule="nonzero" mask="url(#mask-2)" x="-29" y="113" width="224" height="111"></rect>
+            <use id="lollyBottom" fill="#c6d5d2" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <rect id="lollyTop" fill="#c6d5d2" fill-rule="nonzero" mask="url(#mask-2)" x="-25" y="-9" width="224" height="134"></rect>
+            <rect id="lollyMiddle" fill="#c6d5d2" fill-rule="nonzero" mask="url(#mask-2)" x="-29" y="113" width="224" height="111"></rect>
             <path d="M79.7697726,3.19744231e-14 C63.468207,2.89798741e-14 49.9517074,12.6254516 48.8417198,28.8891833 L30.0731738,303.889183 C28.9074019,320.970275 41.8093181,335.762281 58.89041,336.928053 C59.5929941,336.976004 60.2970081,337 61.0012266,337 L17,337 C-0.120827245,337 -14,323.120827 -14,306 C-14,305.265258 -13.9738784,304.530748 -13.9216848,303.797862 L5.66288496,28.7978622 C6.81839036,12.5726406 20.3182545,1.0093501e-14 36.5845697,7.10542736e-15 L79.7697726,2.77347066e-14 Z" id="shade" fill="#67000D" fill-rule="nonzero" opacity="0.0961449033" mask="url(#mask-2)"></path>
             <mask id="mask-4" fill="white">
                 <use xlink:href="#path-3"></use>

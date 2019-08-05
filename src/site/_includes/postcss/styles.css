@@ -165,15 +165,7 @@ footer {
   width: 300px;
 }
 
-#lollyTop {
-  fill:#d55555;
-}
-#lollyMiddle {
-  fill:#e9a55b;
-}
-#lollyBottom {
-  fill:#acde67;
-}
+//
 .info {
   margin: 2em 4em;
 }
