@@ -26,11 +26,11 @@
                 </mask>
                 <use id="Mask" fill="#000000" fill-rule="nonzero" opacity="0.193917411" xlink:href="#path-3"></use>
             </g>
-            <text id="Knock-knock.-Who's-t" opacity="0.472330729" transform="translate(119.000000, 119.500000) rotate(-90.000000) translate(-119.000000, -119.500000) " font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold" fill="#C06C50">
-                <tspan x="34.864502" y="123.5">Knock knock. Who's there?   ... 404 </tspan>
+            <text id="Knock-knock.-Who's-t" opacity="0.614164807" transform="translate(119.000000, 110.500000) rotate(-90.000000) translate(-119.000000, -110.500000) " font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold" fill="#FABAA5">
+                <tspan x="34.864502" y="114.5">Knock knock. Who's there? 404. </tspan>
             </text>
-            <text id="Knock-knock.-Who's-t" opacity="0.972586496" transform="translate(119.000000, 120.500000) rotate(-90.000000) translate(-119.000000, -120.500000) " font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold" fill="#EDB19D">
-                <tspan x="34.864502" y="124.5">Knock knock. Who's there?   ... 404 </tspan>
+            <text id="Knock-knock.-Who's-t" opacity="0.472330729" transform="translate(119.000000, 111.500000) rotate(-90.000000) translate(-119.000000, -111.500000) " font-family="Arial-BoldMT, Arial" font-size="11" font-weight="bold" fill="#C06C50">
+                <tspan x="34.864502" y="115.5">Knock knock. Who's there? 404. </tspan>
             </text>
         </g>
     </g>
