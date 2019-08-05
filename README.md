@@ -4,7 +4,11 @@ Making virtual lollipops for you to send to people to pep them up.
 
 (Also a proof of concept site demonstrating a JAMstack approach where newly created content is rendered from a content API, while a static render of it is being built into the site for future )
 
+[https://vlolly.net/](https://vlolly.net/lolly/V47YWVlDC)
+
 ![](vlolly-screenshot.jpg)
+
+
 
 
 ## Deployed and hosted on Netlify
