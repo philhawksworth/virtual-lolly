@@ -8,7 +8,7 @@ function getLollyData(id) {
     return response.json();
   })
   .then(function(json) {
-    if(json.requestResult.statusCode && json.requestResult.statusCode == 404) {
+    if(json.requestResult && json.requestResult.statusCode == 404) {
       window.location.pathname = "/melted";
     } else {
       displayLolly(json);
