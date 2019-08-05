@@ -8,11 +8,11 @@
 }
 
 ::-moz-selection {
-  background-color: $text-color;
+  background-color: $accent-color;
   color: $page-color;
 }
 ::selection {
-  background-color: $text-color;
+  background-color: $accent-color;
   color: $page-color;
 }
 
@@ -163,8 +163,11 @@ footer {
 
 #mylolly {
   width: 300px;
+  margin-bottom: -7em;
+  @media (min-width: $mid) {
+    margin-bottom: 0em;
+  };
 }
-
 
 .info {
   @media (min-width: $mid) {
@@ -271,4 +274,9 @@ input[type=submit] {
     background-color: $accent-color;
     color: #222;
   }
+}
+
+
+code {
+  color: $accent-color;
 }
