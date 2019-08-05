@@ -1,29 +1,48 @@
----
-title: Get Yours
-layout: layouts/base.njk
-subtitle: Give someone some sugar
----
+{% extends 'layouts/base.njk' %}
 
+{% block main %}
 <h2> Make a new lolly</h2>
 
 <form name="new-lolly" action="/new" method="POST">
+  <div class="lolly">
+    {%  include "tricolour.svg" %}
+    <div class="falvours">
+    <label for="flavourtop" class="pickerLabel">
+       <input type="color" class="colourpicker" id="flavourtop" name="flavourtop" value="#d55555" />
+    </label>
+    <label for="flavourmiddle" class="pickerLabel">
+       <input type="color" class="colourpicker" id="flavourmiddle" name="flavourmiddle" value="#e9a55b" />
+    </label>
+        <label for="flavourbottom" class="pickerLabel">
+       <input type="color" class="colourpicker" id="flavourbottom" name="flavourbottom" value="#acde67" />
+    </label>
+    </div>
+    <div class="info">
+      <div class="details">
+        <p class="recipient">
+          <label for="recipientName">To</label>
+          <input type="text" id="recipientName" name="recipientName" placeholder="A lolly for..." />
+        </p>
+        <div class="message">
+         <label for="message">A lovely message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <p class="from">
+         <label for="sendersName">From</label>
+          <input type="text" id="sendersName" name="sendersName" placeholder="from your friend..." />
+        </p>
+      </div>
 
-  <label for="recipientName">To</label>
-  <input type="text" id="recipientName" name="recipientName" placeholder="A lolly for..." />
+      <input type="submit" value="Make a lolly">
 
-  <select name="lollyType" id="lollyType">
-    <option value="lemonpop">Lemon pop</option>
-    <option value="icecreamcone">Ice cream cone</option>
-    <option value="zoom">Zoom</option>
-  </select>
-
-  <label for="message">A lovely message</label>
-  <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-  <label for="sendersName">From</label>
-  <input type="text" id="sendersName" name="sendersName" placeholder="from your friend..." />
-
-  <input type="submit" value="Make a lolly">
-
+    </div>
+  </div>
 </form>
+{% endblock %}
 
+{% block scripts %}
+  {% set js %}
+    {% include "js/colorPicker.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+{% endblock %}

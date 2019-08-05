@@ -1,13 +1,16 @@
 {% extends 'layouts/base.njk' %}
 
 {% block main %}
-  <h2 id="status">Checking the freezer...</h2>
   <div class="lolly">
-    <h3 id="recipient"></h3>
-    <div id="message"></div>
-    <div id="lollyimage"></div>
-    <img src="/images/lolly.svg" alt="It's a lolly!">
-    <div id="from"></div>
+    {%  include "tricolour.svg" %}
+    <div class="info">
+      <div class="details">
+        <p id="recipient" class="recipient"></p>
+        <div id="message" class="message"></div>
+        <p id="from" class="from"></p>
+      </div>
+      <p class="bytheway"><span class="from">{{ item.data.sendersName }}</span> made this virtual lollipop for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat which won't rot their teeth</p>
+    </div>
   </div>
 {% endblock %}
 

@@ -202,3 +202,20 @@ footer {
     font-size: 0.8em;
   };
 }
+
+.pickerLabel {
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  border: solid 2px #fff;
+  display: block;
+  overflow: hidden;
+  margin: 10px;
+  cursor: default;
+}
+.colourpicker {
+  height: 60px;
+  width: 60px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
