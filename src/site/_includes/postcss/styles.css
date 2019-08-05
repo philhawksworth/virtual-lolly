@@ -206,6 +206,7 @@ footer {
 .flavours {
 
   margin-bottom: 1em;
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -216,6 +217,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     margin-bottom: 3em;
   };
 }
@@ -241,9 +243,11 @@ footer {
 
 label {
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 0.8em;
   display: block;
-  color: #999;
+  color: #bbb;
+  margin-bottom: 0.2em;
+  font-style: normal;
 }
 
 input[type=text],
