@@ -29,9 +29,6 @@ module.exports = function(config) {
   });
 
 
-  // pass some assets right through
-  config.addPassthroughCopy("./src/site/images");
-
   // make the seed target act like prod
   env = (env=="seed") ? "prod" : env;
   return {
@@ -42,8 +39,7 @@ module.exports = function(config) {
     },
     templateFormats : ["njk", "md", "11ty.js"],
     htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
-    passthroughFileCopy: true
+    markdownTemplateEngine : "njk"
   };
 
 };

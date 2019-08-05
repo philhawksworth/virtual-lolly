@@ -36,7 +36,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  text-align: left;
+
   @media (min-width: $mid) {
     width: 700px;
   };
@@ -171,7 +171,7 @@ footer {
 
 .info {
   @media (min-width: $mid) {
-    margin-left: 2em;
+    margin-left: 4em;
   };
 
 }
@@ -262,6 +262,7 @@ textarea {
   box-shadow: $accent-color 0 0 6px;
 }
 
+a.btn,
 input[type=submit] {
   margin-top: 1em;
   box-shadow: $accent-color 0 0 6px;
@@ -283,4 +284,56 @@ input[type=submit] {
 
 code {
   color: $accent-color;
+}
+
+
+.thumbs {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+
+  .exampleLolly {
+    height: 200px;
+    @media (min-width: $mid) {
+      height: 300px;
+    };
+  }
+
+  .example {
+    margin: 0 -38px;
+    @media (min-width: $mid) {
+      margin: 0 -10px;
+    };
+  }
+
+}
+
+
+.example-red {
+  .lollyTop { fill: #e97393; }
+  .lollyMiddle { fill: #d23a62; }
+  .lollyBottom { fill: #bb1161; }
+}
+.example-green {
+  .lollyTop { fill: #97e665; }
+  .lollyMiddle { fill: #8ccb4c; }
+  .lollyBottom { fill: #a8d838; }
+}
+.example-mixed {
+  .lollyTop { fill: #feefd6; }
+  .lollyMiddle { fill: #b65ae4; }
+  .lollyBottom { fill: #c116c1; }
+}
+.example-french {
+  .lollyTop { fill: #cd2753; }
+  .lollyMiddle { fill: #d5cfd1; }
+  .lollyBottom { fill: #5ba3da; }
+}
+.example-tropical {
+  .lollyTop { fill: #ed265b; }
+  .lollyMiddle { fill: #f77249; }
+  .lollyBottom { fill: #f5c64d; }
 }
