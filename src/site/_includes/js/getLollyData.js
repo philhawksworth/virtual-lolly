@@ -8,7 +8,13 @@ function getLollyData(id) {
     return response.json();
   })
   .then(function(json) {
+
     console.log(JSON.stringify(json));
+
+    if(json.statusCode && json.statusCode == 400) {
+      window.location.pathname = "/melted";
+    }
+
     displayLolly(json);
   });
 }

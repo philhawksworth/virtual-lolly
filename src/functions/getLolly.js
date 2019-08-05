@@ -24,11 +24,8 @@ exports.handler = (event, context, callback) => {
 
   }).catch((error) => {
     return callback(null, {
-      statusCode: 301,
-      body: JSON.stringify(error),
-      headers: {
-        Location: 'https://vlolly.com/melted',
-      }
+      statusCode: 400,
+      body: JSON.stringify(error)
     });
   });
 
