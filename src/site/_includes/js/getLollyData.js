@@ -11,7 +11,7 @@ function getLollyData(id) {
 
     console.log(JSON.stringify(json));
 
-    if(json.statusCode && json.statusCode == 400) {
+    if(json.requestResult.statusCode && json.requestResult.statusCode == 400) {
       window.location.pathname = "/melted";
     }
 
