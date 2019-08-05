@@ -210,8 +210,8 @@ footer {
   border: solid 2px #fff;
   display: block;
   overflow: hidden;
-  margin: 10px;
-  cursor: default;
+  margin: 20px;
+  box-shadow: #000 0 0 14px;
 }
 .colourpicker {
   height: 60px;

@@ -24,10 +24,11 @@ function displayLolly(data) {
   }
   $('#recipient').innerText = data.recipientName;
   $('#message').innerText = data.message;
-  $('#lollyimage').innerText = data.lollyType;
+  $('#flavourtop').layer.style.fill = data.flavourtop;
+  $('#flavourmiddle').layer.style.fill = data.flavourmiddle;
+  $('#flavourbottom').layer.style.fill = data.flavourbottom;
   $('#from').innerText = data.sendersName;
 }
-
 
 
 (function(){

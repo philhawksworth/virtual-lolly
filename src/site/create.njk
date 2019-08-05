@@ -1,7 +1,6 @@
 {% extends 'layouts/base.njk' %}
 
 {% block main %}
-<h2> Make a new lolly</h2>
 
 <form name="new-lolly" action="/new" method="POST">
   <div class="lolly">
@@ -42,6 +41,7 @@
 
 {% block scripts %}
   {% set js %}
+    {% include "js/core.js" %}
     {% include "js/colorPicker.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
