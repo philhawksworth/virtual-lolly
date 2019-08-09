@@ -29,7 +29,6 @@ exports.handler = (event, context, callback) => {
     .then((response) => {
       console.log('success', response);
 
-
       // Trigger a nee build to freeze this lolly forever
       axios.post('https://api.netlify.com/build_hooks/5d46fa20da4a1b70047f2f04')
       .then(function (response) {
