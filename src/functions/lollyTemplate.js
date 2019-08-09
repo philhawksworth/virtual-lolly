@@ -5,13 +5,13 @@ module.exports = (data) => `
   <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/css/styles.css">
     <style>
       .lollyTop {
-        fill: #${data.flavourTop};
+        fill: ${data.flavourTop};
       }
       .lollyMiddle {
-        fill: #${data.flavourMiddle};
+        fill: ${data.flavourMiddle};
       }
       .lollyBottom {
-        fill: #${data.flavourBottom};
+        fill: ${data.flavourBottom};
       }
     </style>
     <title>Virtual Lollipops for all!</title>
