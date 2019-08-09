@@ -65,7 +65,7 @@ module.exports = (data) => `
             <div id="message" class="message">${data.message}</div>
             <p id="from" class="from">— ${data.sendersName}</p>
           </div>
-          <p class="bytheway">${data.sendersName} made this virtual lollipop for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat which won't rot their teeth</p>
+          <p class="bytheway">${data.sendersName} made this virtual lollipop for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat which won't rot their teeth...</p>
         </div>
       </div>
     </div>
