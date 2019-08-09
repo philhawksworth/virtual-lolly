@@ -25,6 +25,7 @@
 [[redirects]]
   from = "/lolly/*"
   to = "/.netlify/functions/showLolly?id=:splat"
+  status = 302
 
 
 
