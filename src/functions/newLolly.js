@@ -42,7 +42,7 @@ exports.handler = (event, context, callback) => {
       // Success! Go to a paghe to view trhe result
       return callback(null, {
         body: JSON.stringify(response),
-        statusCode: 301,
+        statusCode: 302,
         headers: {
           Location: `/lolly/${uniquePath}`,
         }
