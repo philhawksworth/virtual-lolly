@@ -22,17 +22,17 @@
   # force = false # Only apply this rule if no file is founds
 
 
-# [[redirects]]
-#   from = "/lolly/*"
-#   to = "/.netlify/functions/showLolly?id=:splat"
+[[redirects]]
+  from = "/lolly/*"
+  to = "/.netlify/functions/showLolly?id=:splat"
 
 
 
 
 # Not even available via the API? THis really id a 404
-# [[redirects]]
-#   from = "/*"
-#   to = "/melted/index.html"
-#   force = false
-#   status = 404
+[[redirects]]
+  from = "/*"
+  to = "/melted/index.html"
+  force = false
+  status = 404
 
