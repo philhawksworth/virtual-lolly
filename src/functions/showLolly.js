@@ -40,7 +40,7 @@ exports.handler = (event, context, callback) => {
       body: JSON.stringify(error),
       statusCode: 301,
       headers: {
-        Location: `/melted`,
+        Location: `/melted/index.html`,
       }
     });
   });
