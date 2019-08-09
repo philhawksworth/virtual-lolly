@@ -27,6 +27,8 @@ exports.handler = (event, context, callback) => {
     q.Get(q.Match(q.Index("lolly_by_path"), path))
   ).then((response) => {
 
+
+
     // if found return a view
     return callback(null, {
       statusCode: 200,
@@ -38,7 +40,7 @@ exports.handler = (event, context, callback) => {
       body: JSON.stringify(error),
       statusCode: 301,
       headers: {
-        Location: `https://vlolly.net/melted`,
+        Location: `/melted`,
       }
     });
   });
