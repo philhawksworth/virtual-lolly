@@ -11,11 +11,12 @@ const client = new faunadb.Client({
 
 exports.handler = (event, context, callback) => {
 
+  console.log('event :', event);
 
   if(event.queryStringParameters.id) {
     console.log('id :', event.queryStringParameters.id.replace("/", ""));
     var path = event.queryStringParameters.id.replace("/", "");
-  } else {
+  } else if(event.headers.referer) {
     console.log('lolly :', event.headers.referer.split('/lolly/')[1].replace("/", ""));
     var path = event.headers.referer.split('/lolly/')[1].replace("/", "");
   }
