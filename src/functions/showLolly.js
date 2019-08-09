@@ -1,5 +1,4 @@
 
-
 const faunadb = require('faunadb');
 const pageTemplate = require('./lollyTemplate.js');
 
