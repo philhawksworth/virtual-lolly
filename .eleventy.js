@@ -8,12 +8,6 @@ module.exports = function(config) {
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
 
-  // Add some utility filters
-  config.addFilter("squash", require("./src/utils/filters/squash.js") );
-  config.addFilter("dateDisplay", require("./src/utils/filters/date.js") );
-
-
-
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 

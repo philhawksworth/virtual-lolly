@@ -26,7 +26,7 @@
   from = "/lolly/*"
   to = "/.netlify/functions/showLolly?id=:splat"
   # status = 200
-  force = false # Only apply this rule if no file is founds
+  # sforce = false # Only apply this rule if no file is founds
 
 
 

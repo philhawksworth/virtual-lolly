@@ -44,7 +44,7 @@ exports.handler = (event, context, callback) => {
         body: JSON.stringify(response),
         statusCode: 301,
         headers: {
-          Location: `https://vlolly.net/lolly/fetch?id=${uniquePath}&new=true`,
+          Location: `/lolly/${uniquePath}s`,
         }
       });
     }).catch((error) => {
