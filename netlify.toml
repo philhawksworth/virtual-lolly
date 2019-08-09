@@ -22,9 +22,9 @@
   # force = false # Only apply this rule if no file is founds
 
 
-[[redirects]]
-  from = "/lolly/*"
-  to = "/.netlify/functions/showLolly?id=:splat"
+# [[redirects]]
+#   from = "/lolly/*"
+#   to = "/.netlify/functions/showLolly?id=:splat"
 
 
 
