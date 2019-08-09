@@ -12,6 +12,8 @@ const client = new faunadb.Client({
 
 exports.handler = (event, context, callback) => {
 
+  console.log('id :', event.queryStringParameters.id);
+
   const path = event.queryStringParameters.id.replace("/", "");
 
   client.query(
