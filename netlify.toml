@@ -16,10 +16,19 @@
 
 
 # unfound lollies should look to the API directly
+# [[redirects]]
+  # from = "/lolly/*"
+  # to = "/lolly/fetch?id=:splat"
+  # force = false # Only apply this rule if no file is founds
+
+
 [[redirects]]
   from = "/lolly/*"
-  to = "/lolly/fetch?id=:splat"
+  to = "/.netlify/functions/showLolly?id=:splat"
+  status = 200
   force = false # Only apply this rule if no file is founds
+
+
 
 
 # Not even available via the API? THis really id a 404
