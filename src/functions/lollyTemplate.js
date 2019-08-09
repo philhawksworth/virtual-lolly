@@ -60,6 +60,7 @@ module.exports = (data) => `
           </svg>
         </div>
         <div class="info">
+          <p class="share">Your lolly is freezing. Share it with this link: <pre>https://vlolly.net/lolly/${data.lollyPath}</pre></p>
           <div class="details">
             <p id="recipient" class="recipient">${data.recipientName}</p>
             <div id="message" class="message">${data.message}</div>

@@ -288,8 +288,12 @@ input[type=submit] {
 }
 
 
-code {
+pre {
   color: $accent-color;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  border: solid 1px #000;
+  background-color: #000;
 }
 
 
