@@ -25,7 +25,7 @@ exports.handler = (event, context, callback) => {
   };
 
 
-  /*
+
   // construct the fauna query
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {
@@ -59,5 +59,5 @@ exports.handler = (event, context, callback) => {
     });
 
 
-    */
+
 }
