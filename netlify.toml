@@ -14,11 +14,12 @@
   status = 200
 
 
-# unfound lollies should look to the API directly
+# unfound lollies should proxy to the API directly
 [[redirects]]
   from = "/lolly/*"
-  to = "/.netlify/functions/showLolly?id=:splat"
-  status = 302
+  to = "/.netlify/functions/showLolly"
+  query = {id = ":splat"}
+  status = 200
 
 
 # Not even available via the API? This really is a 404

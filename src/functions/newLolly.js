@@ -24,6 +24,8 @@ exports.handler = (event, context, callback) => {
     data: data
   };
 
+
+  /*
   // construct the fauna query
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {
@@ -49,10 +51,13 @@ exports.handler = (event, context, callback) => {
       });
     }).catch((error) => {
       console.log('error', error);
-      /* Error! return the error with statusCode 400 */
+      // Error! return the error with statusCode 400
       return callback(null, {
         statusCode: 400,
         body: JSON.stringify(error)
       });
     });
+
+
+    */
 }
