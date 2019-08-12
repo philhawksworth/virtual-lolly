@@ -7,7 +7,6 @@
 [dev]
   command = "npm run start"
 
-
 # resolve the "new" URL to a function
 [[redirects]]
   from = "/new"
@@ -16,21 +15,13 @@
 
 
 # unfound lollies should look to the API directly
-# [[redirects]]
-  # from = "/lolly/*"
-  # to = "/lolly/fetch?id=:splat"
-  # force = false # Only apply this rule if no file is founds
-
-
 [[redirects]]
   from = "/lolly/*"
   to = "/.netlify/functions/showLolly?id=:splat"
   status = 302
 
 
-
-
-# Not even available via the API? THis really id a 404
+# Not even available via the API? This really is a 404
 [[redirects]]
   from = "/*"
   to = "/melted/index.html"
