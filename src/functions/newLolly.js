@@ -25,13 +25,12 @@ exports.handler = (event, context, callback) => {
   };
 
 
-
-  // construct the fauna query
+  // Create the lolly entry in the fauna db
   client.query(q.Create(q.Ref('classes/lollies'), lolly))
     .then((response) => {
       console.log('success', response);
 
-      // Trigger a nee build to freeze this lolly forever
+      // Trigger a new build to freeze this lolly forever
       axios.post('https://api.netlify.com/build_hooks/5d46fa20da4a1b70047f2f04')
       .then(function (response) {
         console.log(response);
@@ -40,8 +39,7 @@ exports.handler = (event, context, callback) => {
         console.log(error);
       });
 
-
-      // Success! Go to a paghe to view trhe result
+      // Success! Go to a page to view the result
       return callback(null, {
         body: JSON.stringify(response),
         statusCode: 302,
@@ -57,7 +55,5 @@ exports.handler = (event, context, callback) => {
         body: JSON.stringify(error)
       });
     });
-
-
 
 }
