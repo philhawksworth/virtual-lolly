@@ -1,6 +1,6 @@
 {
   "name": "vlolly",
-  "version": "3.0.0",
+  "version": "2.0.0",
   "description": "Send someone some sugar. And also demo ptr-rendered site backed with a serverless API",
   "author": "Phil Hawksworth",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventyone"
+    "url": "https://github.com/philhawksworth/virtual-lolly"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
