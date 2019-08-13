@@ -22,8 +22,6 @@
     "dotenv": "^8.0.0",
     "faunadb": "^2.7.0",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.16.0",
-    "node-fetch": "^2.3.0",
     "postcss": "^7.0.17",
     "postcss-color-mix": "^1.1.0",
     "postcss-comment": "^2.0.0",
@@ -32,11 +30,9 @@
     "postcss-simple-vars": "^5.0.2",
     "precss": "^4.0.0",
     "shortid": "^2.2.14",
-    "uglify-es": "^3.3.9",
-    "uglify-js": "^3.6.0"
+    "uglify-es": "^3.3.9"
   },
   "devDependencies": {
-    "cross-env": "5.2.0",
-    "netlify-lambda": "^1.5.1"
+    "cross-env": "5.2.0"
   }
 }

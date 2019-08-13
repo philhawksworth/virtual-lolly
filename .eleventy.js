@@ -5,9 +5,6 @@ module.exports = function(config) {
   // A useful way to reference the context we are runing eleventy in
   let env = process.env.ELEVENTY_ENV;
 
-  // Layout aliases can make templates more portable
-  config.addLayoutAlias('default', 'layouts/base.njk');
-
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
 

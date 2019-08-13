@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
-@import '_variables.css';
-
+@import url("https://fonts.googleapis.com/css?family=Yellowtail&display=swap");
+@import "_variables.css";
 
 * {
   margin: 0;
@@ -25,12 +24,11 @@ body {
   font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
-  background:  $page-color;
-
+  background: $page-color;
 
   @media (min-width: $narrow) {
     font-size: 18px;
-  };
+  }
 }
 
 .container {
@@ -40,35 +38,35 @@ body {
 
   @media (min-width: $mid) {
     width: 700px;
-  };
+  }
   @media (min-width: $wide) {
     width: 800px;
-  };
+  }
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: $text-color;
   font-weight: 600;
   margin-top: 3em;
-  margin-bottom:0.2em;
+  margin-bottom: 0.2em;
   line-height: 1;
 }
 h1 {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 4em;
-  margin-top:1em;
-  margin-bottom:0.2em;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
   line-height: 1;
 
   @media (min-width: $mid) {
     font-size: 4.5em;
-  };
+  }
   @media (min-width: $wide) {
     font-size: 5em;
-  };
+  }
 }
-
 
 h1.title a {
   font-weight: 300;
@@ -80,9 +78,7 @@ h1.title a {
   &:focus {
     text-shadow: $accent-color 0 0 16px;
   }
-
 }
-
 
 .subtitle {
   font-size: 1em;
@@ -99,7 +95,8 @@ p {
   margin-bottom: 1em;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 1em;
 }
 
@@ -109,14 +106,13 @@ a:visited {
   text-decoration: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: mix($text-color, $accent-color, 20%)
+  border-bottom-color: mix($text-color, $accent-color, 20%);
 }
 a:hover,
 a:focus {
   color: $text-color;
   border-bottom-color: $text-color;
 }
-
 
 header {
   text-align: center;
@@ -125,7 +121,6 @@ header {
 main {
   margin-top: 4em;
 }
-
 
 footer {
   margin-top: 6em;
@@ -158,30 +153,27 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  };
-
+  }
 }
 
 .giftLolly .lollipop {
-
   margin-bottom: -4em;
   @media (min-width: $mid) {
     margin-bottom: 0em;
-  };
+  }
 }
 
 .info {
   @media (min-width: $mid) {
     margin-left: 4em;
-  };
-
+  }
 }
 
 .details {
   padding: 1em 2em;
   margin-bottom: 1.5em;
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: rgba(0,0,0,0.6) 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 10px;
   text-align: left;
   font-style: italic;
   font-size: 1.1em;
@@ -189,9 +181,9 @@ footer {
 
 .recipient,
 .from {
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   font-size: 1.6em;
-  font-style:normal;
+  font-style: normal;
   text-shadow: #000 0 0 10px;
 }
 .from {
@@ -200,14 +192,13 @@ footer {
 
 .bytheway {
   font-size: 0.7em;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   @media (min-width: $mid) {
     font-size: 0.8em;
-  };
+  }
 }
 
 .flavours {
-
   margin-bottom: 1em;
   margin-top: 3em;
   display: flex;
@@ -222,7 +213,7 @@ footer {
     align-items: center;
     margin-top: 0;
     margin-bottom: 3em;
-  };
+  }
 }
 
 form {
@@ -238,7 +229,6 @@ form {
   overflow: hidden;
   margin: 30px;
   box-shadow: #000 0 0 14px;
-
 }
 .colourpicker {
   height: 60px;
@@ -257,7 +247,7 @@ label {
   font-style: normal;
 }
 
-input[type=text],
+input[type="text"],
 textarea {
   font-size: 0.9em;
   width: 100%;
@@ -270,7 +260,7 @@ textarea {
 }
 
 a.btn,
-input[type=submit] {
+input[type="submit"] {
   margin-top: 1em;
   box-shadow: $accent-color 0 0 6px;
   border: solid 2px $accent-color;
@@ -280,14 +270,13 @@ input[type=submit] {
   padding: 1em 2em;
   border-radius: 4em;
   cursor: pointer;
-  transition: all .30s;
+  transition: all 0.3s;
 
   &:hover {
     background-color: $accent-color;
     color: #222;
   }
 }
-
 
 pre {
   color: $accent-color;
@@ -297,9 +286,7 @@ pre {
   background-color: #000;
 }
 
-
 .thumbs {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -310,46 +297,105 @@ pre {
     height: 180px;
     @media (min-width: $mid) {
       height: 300px;
-    };
+    }
   }
 
   .example {
     margin: 0 -45px;
     @media (min-width: $mid) {
       margin: 0 -10px;
-    };
+    }
   }
-
 }
-
 
 .example-red {
-  .lollyTop { fill: #e97393; }
-  .lollyMiddle { fill: #d23a62; }
-  .lollyBottom { fill: #bb1161; }
+  .lollyTop {
+    fill: #e97393;
+  }
+  .lollyMiddle {
+    fill: #d23a62;
+  }
+  .lollyBottom {
+    fill: #bb1161;
+  }
 }
 .example-green {
-  .lollyTop { fill: #97e665; }
-  .lollyMiddle { fill: #8ccb4c; }
-  .lollyBottom { fill: #a8d838; }
+  .lollyTop {
+    fill: #97e665;
+  }
+  .lollyMiddle {
+    fill: #8ccb4c;
+  }
+  .lollyBottom {
+    fill: #a8d838;
+  }
 }
 .example-mixed {
-  .lollyTop { fill: #feefd6; }
-  .lollyMiddle { fill: #b65ae4; }
-  .lollyBottom { fill: #c116c1; }
+  .lollyTop {
+    fill: #feefd6;
+  }
+  .lollyMiddle {
+    fill: #b65ae4;
+  }
+  .lollyBottom {
+    fill: #c116c1;
+  }
 }
 .example-french {
-  .lollyTop { fill: #cd2753; }
-  .lollyMiddle { fill: #d5cfd1; }
-  .lollyBottom { fill: #5ba3da; }
+  .lollyTop {
+    fill: #cd2753;
+  }
+  .lollyMiddle {
+    fill: #d5cfd1;
+  }
+  .lollyBottom {
+    fill: #5ba3da;
+  }
 }
 .example-tropical {
-  .lollyTop { fill: #ed265b; }
-  .lollyMiddle { fill: #f77249; }
-  .lollyBottom { fill: #f5c64d; }
+  .lollyTop {
+    fill: #ed265b;
+  }
+  .lollyMiddle {
+    fill: #f77249;
+  }
+  .lollyBottom {
+    fill: #f5c64d;
+  }
 }
 
 .gone {
   margin-top: 4em;
   margin-bottom: 4em;
+}
+
+.github-corner svg {
+  fill: $accent-color;
+  color: $page-color;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
