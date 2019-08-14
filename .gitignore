@@ -4,6 +4,7 @@
 # build artefacts
 /dist
 /src/site/_includes/css
+/src/site/_data/dev/loliies.json
 
 # secrets and errors
 .env
