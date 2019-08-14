@@ -11,7 +11,7 @@ const client = new faunadb.Client({
 module.exports = () => {
   return new Promise((resolve, reject) => {
     client.query(
-      q.Paginate(q.Match(q.Ref("indexes/all_lollies")))
+      q.Paginate(q.Match(q.Ref("indexes/all_lollies")),{size:100000})
     ).then((response) => {
       const lollies = response.data;
       const getAllDataQuery = lollies.map((ref) => {
