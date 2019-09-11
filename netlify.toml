@@ -15,9 +15,9 @@
 
 # unfound lollies should proxy to the API directly
 [[redirects]]
-  from = "/lolly/*"
-  # to = "/.netlify/functions/showLolly?id=:splat"
-  to = "https://google.com/:splat"
+  from = "/lolly/:id"
+  to = "/.netlify/functions/showLolly?id=:id"
+  # to = "https://google.com/:splat"
   status = 200
 
 # Not even available via the API? This really is a 404
