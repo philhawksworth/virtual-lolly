@@ -17,5 +17,5 @@ Making virtual lollipops for you to send to people to pep them up.
 
 - User generated data stored by [Fauna DB](https://www.fauna.com) via a serverless function
 - Site generate (pre-rendered) by [Eleventy](https://11ty.io)
-- Newly created items served via a client-side request to the content API thanks to [Netlify's custom 404 routing](https://www.netlify.com/docs/redirects/#custom-404)
+- Newly created items served via a client-side request to the content API thanks to [Netlify's custom 404 routing](https://www.netlify.com/docs/redirects/?utm_source=github&utm_medium=vlolly-pnh&utm_campaign=devex#custom-404)
 
