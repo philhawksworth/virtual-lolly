@@ -12,7 +12,15 @@ const client = new faunadb.Client({
 exports.handler = (event, context, callback) => {
 
   // get the lolly ID from the request
-  const path = event.queryStringParameters.id.replace("/", "");
+  try {
+    const path = event.queryStringParameters.id.replace("/", "");
+  }
+  catch (error) {
+    console.log('Error getting query paramters :', error);
+    return callback(null, {
+      body: 'Error getting query paramters :' + JSON.stringify(error),
+      statusCode: 500,
+  }
 
   // find the lolly data in the DB
   client.query(
