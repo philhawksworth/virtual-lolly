@@ -17,8 +17,8 @@ exports.handler = (event, context, callback) => {
   }
   catch (error) {
     console.log('Error getting query paramters :', error);
-    return callback(null, {
-      body: 'Error getting query paramters :' + JSON.stringify(error),
+    return callback(error, {
+      body: JSON.stringify(error),
       statusCode: 500,
   }
 
