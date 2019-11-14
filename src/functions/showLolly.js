@@ -1,4 +1,3 @@
-
 const faunadb = require('faunadb');
 const pageTemplate = require('./lollyTemplate.js');
 
@@ -10,7 +9,6 @@ const client = new faunadb.Client({
   secret: process.env.FAUNADB_SERVER_SECRET
 });
 
-
 exports.handler = (event, context, callback) => {
 
   // get the lolly ID from the request
@@ -20,8 +18,6 @@ exports.handler = (event, context, callback) => {
   client.query(
     q.Get(q.Match(q.Index("lolly_by_path"), path))
   ).then((response) => {
-
-    console.log('LOLLY FOUND :', response.data);
 
     // if found return a view
     return callback(null, {
