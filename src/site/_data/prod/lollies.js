@@ -14,6 +14,9 @@ module.exports = () => {
       q.Paginate(q.Match(q.Ref("indexes/all_lollies")),{size:100000})
     ).then((response) => {
       const lollies = response.data;
+
+      console.log('Lolly pages to generate:', lollies.length);
+
       const getAllDataQuery = lollies.map((ref) => {
         return q.Get(ref);
       });
