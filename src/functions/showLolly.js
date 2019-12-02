@@ -14,8 +14,8 @@ exports.handler = (event, context, callback) => {
   console.log("event", event);
 
   // get the lolly ID from the request
-  const path = event.queryStringParameters.id.replace("/", "");
-
+  // const path = event.queryStringParameters.id.replace("/", "");
+  const path = event.path.replace("/lollypath/", "");
 
 
   // find the lolly data in the DB
