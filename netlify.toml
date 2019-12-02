@@ -20,6 +20,7 @@
   from = "/lolly/*"
   to = "/.netlify/functions/showLolly/:splat"
   status = 200
+  force = false
 
 
 
