@@ -11,16 +11,12 @@ const client = new faunadb.Client({
 
 exports.handler = (event, context, callback) => {
 
-  console.log("event", event);
-
   // get the lolly ID from the request
-  // const path = event.queryStringParameters.id.replace("/", "");
-  const path = event.path.replace("/lollypath/", "");
-
+  const id = event.path.replace("/lolly/", "");
 
   // find the lolly data in the DB
   client.query(
-    q.Get(q.Match(q.Index("lolly_by_path"), path))
+    q.Get(q.Match(q.Index("lolly_by_path"), id))
   ).then((response) => {
 
     // if found return a view
