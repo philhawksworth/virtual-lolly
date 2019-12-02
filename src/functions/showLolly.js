@@ -13,7 +13,7 @@ exports.handler = (event, context, callback) => {
 
   // get the lolly ID from the request
   const path = event.queryStringParameters.id.replace("/", "");
-  console.log("event['pathParameters'] :", event['pathParameters']);
+  console.log("event", event);
 
 
 
