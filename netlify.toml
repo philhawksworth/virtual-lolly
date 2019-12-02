@@ -19,6 +19,19 @@
   to = "/.netlify/functions/showLolly?id=:splat"
   status = 302
 
+# unfound lollies should proxy to the API directly
+[[redirects]]
+  from = "/lollypath/*"
+  to = "/.netlify/functions/showLolly/:splat"
+  status = 200
+
+# unfound lollies should proxy to the API directly
+[[redirects]]
+  from = "/lollyparam/*"
+  to = "/.netlify/functions/showLolly?id=:splat"
+  status = 200
+
+
 # Not even available via the API? This really is a 404
 [[redirects]]
   from = "/*"
