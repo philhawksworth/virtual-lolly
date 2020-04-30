@@ -36,7 +36,7 @@ exports.handler = (event, context, callback) => {
         console.log(response);
       })
       .catch(function (error) {
-        console.log(error);
+        console.error(error);
       });
 
       // Success! Go to a page to view the result
@@ -48,7 +48,7 @@ exports.handler = (event, context, callback) => {
         }
       });
     }).catch((error) => {
-      console.log('error', error);
+      console.error('error', error);
       // Error! return the error with statusCode 400
       return callback(null, {
         statusCode: 400,
