@@ -14,11 +14,21 @@
     {% include "svg/github-corner.svg" %}
 
     <div class="container">
-      {% include "header.njk" %}
+      <header>
+        <h1 class="title"><a href="/">virtual lollipop</a></h1>
+        <p class="subtitle">because we all know someone <br/>who deserves some sugar.</p>
+      </header>
       {% block main %}
       {{ content | safe }}
       {% endblock %}
-      {# {% include "footer.njk" %} #}
+      <footer>
+        <p>
+          Built and hosted with <a href="https://netlify.com?utm_source=vlolly&utm_medium=staticfirst-pnh&utm_campaign=devex">Netlify</a> by <a href="https://twitter.com/philhawksworth">Phil Hawksworth</a>
+        </p>
+        <p>
+          Read about how and why <a href="https://css-tricks.com/static-first-pre-generated-jamstack-sites-with-serverless-rendering-as-a-fallback/">on CSS-Tricks</a>.
+        </p>
+      </footer>
     </div>
 
     {% block scripts %}

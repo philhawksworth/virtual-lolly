@@ -123,12 +123,8 @@ main {
 }
 
 footer {
-  margin-top: 6em;
-  padding-top: 4em;
-  padding-bottom: 6em;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: mix($text-color, $accent-color, 10%);
+  margin-top: 10em;
+  margin-bottom: 5em;
   font-size: 0.7em;
   color: mix($text-color, $accent-color, 50%);
 
