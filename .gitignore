@@ -1,10 +1,13 @@
 # dependencies installed by npm
 /node_modules
+plugins/track-latest/node_modules
+
 
 # build artefacts
 /dist
 /src/site/_includes/css
-/src/site/_data/dev/loliies.json
+/src/site/_data/lollies.json
+/src/site/_data//last.json
 
 # secrets and errors
 .env
@@ -14,3 +17,6 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Local Netlify folder
+.netlify

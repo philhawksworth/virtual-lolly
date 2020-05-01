@@ -1,0 +1,12 @@
+{
+  "name": "get-fauna-lollies",
+  "version": "0.0.1",
+  "description": "A utility to keep support incremental builds of the vlolly site",
+  "main": "index.js",
+  "author": "Phil Hawksworth",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "faunadb": "^2.7.0"
+  }
+}

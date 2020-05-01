@@ -1,11 +1,19 @@
+---js
+{
+  layout: "layouts/lolly.njk",
+  pagination: {
+    data: "lollies",
+    size: 1,
+    alias: "item",
+    before: function(data) {
+      const last = require(process.cwd() + "/src/site/_data/last.json");
+      return data.filter(item => item.ts > last.ts);
+    }
+  },
+  permalink: "lolly/{{ item.data.lollyPath }}/index.html"
+}
 ---
-layout: layouts/lolly.njk
-pagination:
-  data: lollies
-  size: 1
-  alias: item
-permalink: lolly/{{ item.data.lollyPath }}/index.html
----
+
 
 11ty seems to need something in this body... even if my template kills it.
 

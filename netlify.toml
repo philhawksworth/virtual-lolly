@@ -4,8 +4,6 @@
   functions = "src/functions"
   NODE_ENV = "10.15.3"
 
-[dev]
-  command = "npm run start"
 
 # resolve the "new" URL to a function
 [[redirects]]
@@ -25,4 +23,9 @@
   to = "/melted/index.html"
   force = false
   status = 404
+
+
+# Use a Netlify Build plugin to enable incremental builds
+[[plugins]]
+  package = "./plugins/track-latest"
 

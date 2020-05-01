@@ -2,8 +2,6 @@
 
 module.exports = function(config) {
 
-  // A useful way to reference the context we are runing eleventy in
-  let env = process.env.ELEVENTY_ENV;
 
   // minify the html output
   config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
@@ -20,13 +18,11 @@ module.exports = function(config) {
   });
 
 
-  // make the seed target act like prod
-  env = (env=="seed") ? "prod" : env;
   return {
     dir: {
       input: "src/site",
       output: "dist",
-      data: `_data/${env}`
+      data: "_data"
     },
     templateFormats : ["njk", "md", "11ty.js"],
     htmlTemplateEngine : "njk",
