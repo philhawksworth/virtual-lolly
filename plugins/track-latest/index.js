@@ -1,4 +1,5 @@
 const faunadb = require('faunadb');
+const chalk = require('chalk');
 const fs = require('fs');
 
 require('dotenv').config();
@@ -16,7 +17,7 @@ const saveFile = async function(path, data) {
     if(err) {
       console.error(err);
     } else {
-      console.log(`Data saved: ${path}`);
+      console.log(chalk.yellow('Data saved:'), path);
     }
   });
 }
@@ -28,7 +29,7 @@ module.exports = {
     // restore the timestamp of the most recent lolly page from the cache
     if( await utils.cache.has( lastLollyRef )) {
       await utils.cache.restore( lastLollyRef );
-      console.log('Restored a previous timestamp from cache :>> ', lastLollyRef);
+      console.log(chalk.green('Restored from build cache'), '- previous timestamp from cache');
     } else {
       await saveFile( lastLollyRef, JSON.stringify({ "ts": 0 }) );
     }
@@ -51,6 +52,8 @@ module.exports = {
       // Reinstate previously build and cached pages
       if( await utils.cache.has( `${constants.PUBLISH_DIR}/lolly`) ) {
         await utils.cache.restore( `${constants.PUBLISH_DIR}/lolly`);
+        const last = require(lastLollyRef);
+        console.log(chalk.green('Restored from build cache'), `Lolly pages prior to ${last.ts}` );
       }
 
   },
@@ -59,9 +62,12 @@ module.exports = {
   async onPostBuild({ utils, constants }) {
     // cache the lolly pages and the timestamp of the most recent lolly
     const lollies = require(lollyDataFile);
-    await saveFile( lastLollyRef, JSON.stringify({ "ts": lollies[lollies.length-1].ts }) );
+    const new_ts = lollies[lollies.length-1].ts;
+    await saveFile( lastLollyRef, JSON.stringify({ "ts": new_ts }) );
     await utils.cache.save( lastLollyRef );
+    console.log(chalk.green('Added to build cache'), `- latest lolly page timestamp: ${new_ts}`);
     await utils.cache.save( `${constants.PUBLISH_DIR}/lolly`);
+    console.log(chalk.green('Added to build cache'), '- lolly pages');
   }
 
 }
