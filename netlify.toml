@@ -6,46 +6,46 @@
 
 
 [[redirects]]
-  from = "*"
+  from = "/*"
   to = "/us/:splat"
-  force = true
-  # conditions = {Country = ["US"]}
+  conditions = {Country = ["GB"]}
+
 
 [[redirects]]
-  from = "/:locale/css/*"
-  to = "/css/*"
+  from = "/us/:locale/css/:file"
+  to = "/css/:file"
 
 [[redirects]]
-  from = "/:locale/js/*"
-  to = "/js/*"
+  from = "/us/:locale/js/:file"
+  to = "/js/:file"
 
 
 
-# # resolve the "new" URL to a function
-# [[redirects]]
-#   from = "/new"
-#   to = "/.netlify/functions/newLolly"
-#   status = 200
+# resolve the "new" URL to a function
+[[redirects]]
+  from = "/new"
+  to = "/.netlify/functions/newLolly"
+  status = 200
 
-# # unfound lollies should proxy to the API directly
-# [[redirects]]
-#   from = "/lolly/*"
-#   to = "/.netlify/functions/showLolly?id=:splat"
-#   status = 302
+# unfound lollies should proxy to the API directly
+[[redirects]]
+  from = "/lolly/*"
+  to = "/.netlify/functions/showLolly?id=:splat"
+  status = 302
 
-# [[redirects]]
-#   from = "/popsicle/*"
-#   to = "/.netlify/functions/showLolly?id=:splat"
-#   status = 302
+[[redirects]]
+  from = "/popsicle/*"
+  to = "/.netlify/functions/showLolly?id=:splat"
+  status = 302
 
 
 
-# # Not even available via the API? This really is a 404
-# [[redirects]]
-#   from = "/*"
-#   to = "/melted/index.html"
-#   force = false
-#   status = 404
+# Not even available via the API? This really is a 404
+[[redirects]]
+  from = "/*"
+  to = "/melted/index.html"
+  force = false
+  status = 404
 
 
 
