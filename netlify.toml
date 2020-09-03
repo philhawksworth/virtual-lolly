@@ -5,6 +5,11 @@
   NODE_ENV = "10.15.3"
 
 
+[[redirects]]
+  from = "/*"
+  to = "/us/:splat"
+  status = 200
+
 # resolve the "new" URL to a function
 [[redirects]]
   from = "/new"
@@ -17,12 +22,21 @@
   to = "/.netlify/functions/showLolly?id=:splat"
   status = 302
 
+[[redirects]]
+  from = "/popsicle/*"
+  to = "/.netlify/functions/showLolly?id=:splat"
+  status = 302
+
+
+
 # Not even available via the API? This really is a 404
 [[redirects]]
   from = "/*"
   to = "/melted/index.html"
   force = false
   status = 404
+
+
 
 
 # Use a Netlify Build plugin to enable incremental builds

@@ -1,3 +1,6 @@
+
+{% set localize = strings[language] %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +10,7 @@
     <style>
        {% block extraStyle %}{% endblock %}
     </style>
-    <title>Virtual Lollipops for all!</title>
+    <title>Virtual {{ localize['Lollipops'] }} for all!</title>
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
@@ -15,7 +18,7 @@
 
     <div class="container">
       <header>
-        <h1 class="title"><a href="/">virtual lollipop</a></h1>
+        <h1 class="title"><a href="/">virtual {{ localize['lollipop'] }}</a></h1>
         <p class="subtitle">because we all know someone <br/>who deserves some sugar.</p>
       </header>
       {% block main %}
