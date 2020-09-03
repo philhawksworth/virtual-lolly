@@ -6,18 +6,25 @@
 
 
 [[redirects]]
-  from = "/*"
-  to = "/us/:splat"
+  from = "/"
+  to = "/us/"
   conditions = {Country = ["GB"]}
-
-
-[[redirects]]
-  from = "/us/:locale/css/:file"
-  to = "/css/:file"
+  status = 200
+  force = true
 
 [[redirects]]
-  from = "/us/:locale/js/:file"
-  to = "/js/:file"
+  from = "/create"
+  to = "/us/create"
+  conditions = {Country = ["GB"]}
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/lolly/*"
+  to = "/popsicle/:splat"
+  conditions = {Country = ["GB"]}
+  status = 302
+  force = true
 
 
 
@@ -47,7 +54,12 @@
   force = false
   status = 404
 
-
+[[redirects]]
+  from = "/*"
+  to = "/us/melted/index.html"
+  conditions = {Country = ["US"]}
+  force = false
+  status = 404
 
 
 # Use a Netlify Build plugin to enable incremental builds
