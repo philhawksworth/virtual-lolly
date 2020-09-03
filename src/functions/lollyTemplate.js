@@ -14,13 +14,13 @@ module.exports = (data) => `
         fill: ${data.flavourBottom};
       }
     </style>
-    <title>Virtual Lollipops for all!</title>
+    <title>Virtual ${data.localize.Lollipops} for all!</title>
   </head>
   <body>
     <div class="container">
       <header>
         <h1 class="title">
-          <a href="/">virtual lollipop</a>
+          <a href="/">virtual ${data.localize.lollipop}</a>
         </h1>
         <p class="subtitle">because we all know someone<br>who deserves some sugar.</p>
       </header>
@@ -60,13 +60,13 @@ module.exports = (data) => `
           </svg>
         </div>
         <div class="info">
-          <p class="share">Your lolly is freezing. Share it with this link: <pre>https://vlolly.net/lolly/${data.lollyPath}</pre></p>
+          <p class="share">Your ${data.localize.lolly} is freezing. Share it with this link: <pre>https://vlolly.net/${data.localize.lolly}/${data.lollyPath}</pre></p>
           <div class="details">
             <p id="recipient" class="recipient">${data.recipientName}</p>
             <div id="message" class="message">${data.message}</div>
             <p id="from" class="from">— ${data.sendersName}</p>
           </div>
-          <p class="bytheway">${data.sendersName} made this virtual lollipop for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat which won't rot their teeth...</p>
+          <p class="bytheway">${data.sendersName} made this virtual ${data.localize.lollipop} for you. You can <a href="/create">make your own</a> to send to a friend who deserve some sugary treat which won't rot their teeth...</p>
         </div>
       </div>
       <footer>
