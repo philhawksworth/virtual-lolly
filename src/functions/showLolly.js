@@ -29,7 +29,7 @@ const handler = async(event) => {
 
         const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] });
 
-        console.log(`templateData ${JSON.stringify(templateData)}`);
+        console.log(`templateData for ${lang} -  ${JSON.stringify(templateData)}`);
 
 
         // if found return a view
