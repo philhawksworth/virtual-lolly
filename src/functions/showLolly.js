@@ -4,7 +4,6 @@ const languageStrings = require('../site/_data/strings.json');
 const { builder } = require('@netlify/functions');
 
 
-
 // setup and auth the Fauna DB client
 const q = faunadb.query;
 const client = new faunadb.Client({

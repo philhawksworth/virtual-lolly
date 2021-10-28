@@ -2,8 +2,6 @@ const faunadb = require('faunadb');
 const shortid = require('shortid');
 const querystring = require('querystring');
 
-require('dotenv').config();
-
 const q = faunadb.query
 const client = new faunadb.Client({
     secret: process.env.FAUNADB_SERVER_SECRET
