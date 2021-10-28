@@ -1,49 +1,58 @@
 const faunadb = require('faunadb');
 const pageTemplate = require('./lollyTemplate.js');
 const languageStrings = require('../site/_data/strings.json');
+const { builder } = require('@netlify/functions');
 
 
-require('dotenv').config();
 
 // setup and auth the Fauna DB client
 const q = faunadb.query;
 const client = new faunadb.Client({
-  secret: process.env.FAUNADB_SERVER_SECRET
+    secret: process.env.FAUNADB_SERVER_SECRET
 });
 
-exports.handler = (event, context, callback) => {
+const handler = async(event) => {
 
-  // get the lolly ID from the request
-  const path = event.queryStringParameters.id.replace("/", "");
+    // get the lolly ID from the request
+    let lollyId = event.path.split("lolly/")[1];
+    let lang = 'en';
+    if (!lollyId) {
+        lollyId = event.path.split("popsicle/")[1];
+        lang = 'us';
+    }
 
-  // localize some strings
-  const lang = event.queryStringParameters.lang;
+    console.log(`Render lolly ${lollyId}`);
 
-
-  // find the lolly data in the DB
-  client.query(
-    q.Get(q.Match(q.Index("lolly_by_path"), path))
+    // find the lolly data in the DB
+    return await client.query(
+        q.Get(q.Match(q.Index("lolly_by_path"), lollyId))
     ).then((response) => {
 
-    const templateData = Object.assign(response.data, {'localize': languageStrings[lang] })
+        const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] })
 
-    // if found return a view
-    return callback(null, {
-      statusCode: 200,
-      body: pageTemplate(templateData)
+        // if found return a view
+        return {
+            statusCode: 200,
+            headers: {
+                "Content-Type": "text/html",
+            },
+            body: pageTemplate(templateData)
+        }
+
+    }).catch((error) => {
+
+        // not found or an error, send to the generic error page
+        console.log('Error:', error);
+        return {
+            body: JSON.stringify(error),
+            statusCode: 301,
+            headers: {
+                Location: `/melted/index.html`,
+            }
+        };
     });
-
-  }).catch((error) => {
-
-    // not found or an error, send to the generic error page
-    console.log('Error:', error);
-    return callback(null, {
-      body: JSON.stringify(error),
-      statusCode: 301,
-      headers: {
-        Location: `/melted/index.html`,
-      }
-    });
-  });
 
 }
+
+// exports.handler = handler;
+exports.handler = builder(handler);

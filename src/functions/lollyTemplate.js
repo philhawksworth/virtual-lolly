@@ -1,4 +1,3 @@
-
 module.exports = (data) => `
 <!doctype html>
 <html lang="en">
@@ -60,7 +59,7 @@ module.exports = (data) => `
           </svg>
         </div>
         <div class="info">
-          <p class="share">Your ${data.localize.lolly} is freezing. Share it with this link: <pre>https://vlolly.net/${data.localize.lolly}/${data.lollyPath}</pre></p>
+          <p class="share">Enjoy your ${data.localize.lolly}! Share it with this link: <pre>https://vlolly.net/${data.localize.lolly}/${data.lollyPath}</pre></p>
           <div class="details">
             <p id="recipient" class="recipient">${data.recipientName}</p>
             <div id="message" class="message">${data.message}</div>
