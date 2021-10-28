@@ -23,7 +23,7 @@ const handler = async(event) => {
     console.log(`Render lolly ${lollyId}`);
 
     // find the lolly data in the DB
-    return await client.query(
+    return client.query(
         q.Get(q.Match(q.Index("lolly_by_path"), lollyId))
     ).then((response) => {
 
