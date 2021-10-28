@@ -1,0 +1,14 @@
+{
+  "gb" : {
+    "lolly" : "lolly",
+    "lollipop" : "lollipop",
+    "Lollipops" : "Lollipops"
+  },
+  "us" : {
+    "lolly" : "popsicle",
+    "lollipop" : "popsicle",
+    "Lollipops" : "Popsicles"
+  }
+}
+
+
