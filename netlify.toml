@@ -2,6 +2,8 @@
   command = "npm run build"
   publish = "dist"
   functions = "src/functions"
+  NODE_ENV = "16.11.0"
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/"
