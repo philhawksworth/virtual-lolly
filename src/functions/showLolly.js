@@ -27,7 +27,10 @@ const handler = async(event) => {
         q.Get(q.Match(q.Index("lolly_by_path"), lollyId))
     ).then((response) => {
 
-        const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] })
+        const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] });
+
+        console.log(`templateData ${JSON.stringify(templateData)}`);
+
 
         // if found return a view
         return {
