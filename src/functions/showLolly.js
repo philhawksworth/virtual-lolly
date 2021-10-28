@@ -20,13 +20,15 @@ const handler = async(event) => {
         lang = 'us';
     }
 
-    console.log(`Render lolly ${lollyId}`);
-    console.log(`required language strings ${JSON.stringify(languageStrings)}`);
 
     // find the lolly data in the DB
     return client.query(
         q.Get(q.Match(q.Index("lolly_by_path"), lollyId))
     ).then((response) => {
+
+        console.log(`Render lolly ${lollyId}`);
+        console.log(`required language strings ${JSON.stringify(languageStrings)}`);
+        console.log(`hardcoded US language strings ${JSON.stringify(languageStrings['us'])}`);
 
         const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] });
 
