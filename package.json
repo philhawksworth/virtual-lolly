@@ -16,8 +16,6 @@
     "dependencies": {
         "@11ty/eleventy": "^0.12.1",
         "@netlify/functions": "^0.8.0",
-        "autoprefixer": "^9.6.0",
-        "dotenv": "^8.0.0",
         "faunadb": "^2.7.0",
         "html-minifier": "^4.0.0",
         "sass": "^1.43.4",
