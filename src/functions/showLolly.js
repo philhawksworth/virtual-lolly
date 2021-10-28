@@ -29,6 +29,8 @@ const handler = async(event) => {
 
         const templateData = Object.assign(response.data, { 'localize': languageStrings[lang] });
 
+        console.log(`language strings ${JSON.stringify(languageStrings[lang])}`);
+
         console.log(`templateData for ${lang} -  ${JSON.stringify(templateData)}`);
 
 
