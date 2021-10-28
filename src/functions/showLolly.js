@@ -1,6 +1,6 @@
 const faunadb = require('faunadb');
 const pageTemplate = require('./lollyTemplate.js');
-const languageStrings = require('../site/_data/strings.json');
+const languageStrings = require('./strings.json');
 const { builder } = require('@netlify/functions');
 
 
