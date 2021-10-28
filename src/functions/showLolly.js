@@ -21,6 +21,7 @@ const handler = async(event) => {
     }
 
     console.log(`Render lolly ${lollyId}`);
+    console.log(`required language strings ${JSON.stringify(languageStrings)}`);
 
     // find the lolly data in the DB
     return client.query(
