@@ -5,9 +5,8 @@
     "author": "Phil Hawksworth",
     "license": "MIT",
     "scripts": {
-        "start": "npm run dev",
-        "dev": "ELEVENTY_ENV=dev eleventy --serve",
-        "build": "ELEVENTY_ENV=prod eleventy"
+        "dev": "eleventy --serve",
+        "build": "eleventy"
     },
     "repository": {
         "type": "git",
@@ -16,10 +15,10 @@
     "dependencies": {
         "@11ty/eleventy": "^0.12.1",
         "@netlify/functions": "^0.8.0",
-        "faunadb": "^2.7.0",
+        "faunadb": "^4.4.1",
         "html-minifier": "^4.0.0",
         "sass": "^1.43.4",
-        "shortid": "^2.2.14",
+        "shortid": "^2.2.16",
         "uglify-es": "^3.3.9"
     }
 }

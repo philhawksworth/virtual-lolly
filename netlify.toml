@@ -2,8 +2,6 @@
   command = "npm run build"
   publish = "dist"
   functions = "src/functions"
-  NODE_ENV = "10.15.3"
-
 
 [[redirects]]
   from = "/"
