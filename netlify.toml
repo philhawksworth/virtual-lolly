@@ -32,7 +32,7 @@
   to = "/.netlify/functions/newLolly"
   status = 200
 
-# lolly paghe request will be rendered and persisted on demand
+# lolly page requests will be rendered and persisted on demand
 [[redirects]]
   from = "/lolly/*"
   to = "/.netlify/functions/showLolly"
@@ -44,7 +44,7 @@
   status = 200
 
 
-# Not even available via the API? This really is a 404
+# Not found? This really is a 404
 [[redirects]]
   from = "/*"
   to = "/melted/index.html"
