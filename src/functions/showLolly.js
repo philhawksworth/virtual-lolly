@@ -20,18 +20,14 @@ const handler = async(event) => {
         lang = 'us';
     }
 
-
     // find the lolly data in the DB
     return client.query(
         q.Get(q.Match(q.Index("lolly_by_path"), lollyId))
     ).then((response) => {
 
-        console.log(`Render lolly ${lollyId}`);
-        const templateData = {...response.data, ... { 'localize': languageStrings[lang] } };
-        console.log(`templateData for ${lang} -  ${JSON.stringify(templateData)}`);
-
-
         // if found return a view
+        console.log(`Render and persist lolly page: ${lollyId}`);
+        const templateData = {...response.data, ... { 'localize': languageStrings[lang] } };
         return {
             statusCode: 200,
             headers: {

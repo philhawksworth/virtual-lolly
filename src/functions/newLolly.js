@@ -21,7 +21,6 @@ exports.handler = (event, context, callback) => {
         data: data
     };
 
-
     // Create the lolly entry in the fauna db
     client.query(q.Create(q.Ref('classes/lollies'), lolly))
         .then((response) => {
